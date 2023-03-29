@@ -9,9 +9,6 @@ const main = async (args: string[]): Promise<void> => {
 
   const packet = fs.readFileSync("sample-packet.zip");
 
-  //const nonce = sodium.crypto_box_NONCEBYTES
-  // const cipherTextLength = sodium.crypto_box_MACBYTES + packet.length
-
   const encrypted = sodium.crypto_box_seal(packet, user_public_key);
 
   fs.writeFileSync("encrypted.box", encrypted);

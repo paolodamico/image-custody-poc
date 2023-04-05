@@ -1,6 +1,8 @@
 import * as sodium from "@devtomio/sodium";
 import fs from "fs";
 
+// https://libsodium.gitbook.io/doc/public-key_cryptography/sealed_boxes
+// https://libsodium.gitbook.io/doc/public-key_cryptography/authenticated_encryption
 const main = async (args: string[]): Promise<void> => {
   //const { public_key: orb_public_key, secret_key: orb_private_key } = sodium.crypto_box_keypair();
 

@@ -6,12 +6,16 @@
   "scripts": {
     "encrypt": "ts-node encrypt.ts",
     "decrypt": "ts-node decrypt.ts",
+    "sign": "ts-node sign_image.ts",
+    "verify": "ts-node verify_signature.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@devtomio/sodium": "^0.3.0"
+    "@devtomio/sodium": "^0.3.0",
+    "exiftool-vendored": "^21.2.0",
+    "jose": "^4.13.1"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",
